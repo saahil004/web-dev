@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            /* display inline property mein width ka zero effect hoga tou inline block lagana parega*/
+            border: 2px solid blue;
+            /* display: inline; */
+            display: inline-block;
+            /* display: none; */
+            padding: 45px;
+            margin: 22px;
+            width: 300px;
+            /* display: inline-flex; */
+            /* justify-content: center; */
+            /* display: grid; */
+            /* flex grid dono common display properties hain */
+        }
+        .box1 {
+            /* display none se gayab hojayega aur uski jagah bhi */
+            /* display: none; */
+            /* iss se jagah nahi jayegi */
+            /* visibility: hidden; */
+            /* flexbox cheezein center karne mein kaam ayega */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* text-align: center;    */
+            /* display: inline-flex; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        im a box
+    </div>
+    <div class="box">also a nice box</div>
+    <span>i am a good</span>
+    <span>boy</span>
+</body>
+</html>

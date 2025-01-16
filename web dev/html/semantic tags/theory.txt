@@ -1,0 +1,2 @@
+Semantic tags are important for SEO and maintainability of code. 
+Makes a website more accessible and easier to understand.

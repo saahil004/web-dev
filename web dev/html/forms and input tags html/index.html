@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html forms lesson</title>
+</head>
+<body>
+    <h1>form to apply</h1>
+    <form method="post" action="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" 
+        name="username" placeholder="enter your username" autofocus>
+        <div>
+            <label for="password">password:</label>
+            <input type="password" name="password" id="password" placeholder="password">
+        </div>
+        <div>
+            <caption>Gender:</caption>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+            <label for="subscribe">subscribe</label>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+        </div>
+        <div> 
+            <label for="ps">Enter your personal statement below:</label>
+            <textarea name="personal statement" id="ps" rows="20" cols="50">Your personal statement...</textarea>
+        </div>
+        <div>
+            <label for="course">Select your course</label>
+            <select name="courses" id="course" required>
+              
+              <option value="computer science">Computer Science</option>
+              <option value="data science">Data Science</option>
+              <option value="ai">AI</option>
+            </select>  
+        </div>
+        <input type="submit" value="submit form">
+
+    </form>
+</body>
+</html>

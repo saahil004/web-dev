@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /* zero specificity for universal selector */
+        * {
+            color: cornflowerblue;
+            text-align: center;
+        }
+
+        /* element selector has specificity 1 */
+        div > h1{
+            color: aqua;
+            color: black !important;
+        }
+
+        /* class, attribute, and pseudoclass selectors have specificity 10 */
+        .cred {
+            color: blueviolet;
+        }
+        /* !important has highest specificity */
+        .cpurple {
+            color: chartreuse !important;
+        }
+
+        div:hover {
+            color: aqua;
+        }
+
+        a:visited {
+            color: palevioletred;
+        }
+
+        /* this is an attribute selector */
+        [data="x"] {
+            color: coral;
+        }
+
+        /* id selectors have 100 specificity  */
+        #nigga {
+            color: purple;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: darkgoldenrod;" "nigga" class="cred cpurple" data="x">This is a heading</h1>
+        <p>this is a para</p>
+        <p id="nigga">this is a para2</p>
+        <p>this is a para3</p>
+        <a id="nigga" href="www.google.com">google</a>
+    </div>
+</body>
+
+</html>

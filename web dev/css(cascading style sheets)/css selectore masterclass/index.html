@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* class selector */
+        .red {
+            background-color: aqua;
+        }
+        /* id selector */
+        #green {
+            color: aqua;
+
+        }
+        /* child selectors : direct child hona chahiye uske andar kisi cheez ke andar nahi*/
+        div > article >p{
+            color: blue;
+            background-color: aqua;
+
+        }
+        /* descendant selectors: direct child bhale na ho lekin andar ho  */
+        div  p{
+            font-size: larger;
+        }
+         /* universal selector: sab selectors ke saath kuch karna ho tou */
+        * {
+            margin: 0;
+            padding: 0;
+            color: blueviolet;
+        }
+          /* pseudo class selector: link ka pata chalega visit hui hai ya nahi */
+        a:visited {
+            color: palevioletred;
+        } 
+        a:link {
+            color: black;
+        }      
+        a:active {
+            background-color: blueviolet;
+        }
+        a:hover {
+            background-color: brown;
+        }
+        /* p:first-child { */
+            /* background-color: chartreuse; */
+        /* } */
+        div.red[nigga="black"] {
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="nigga" class="red" nigga="black">
+        i am a div
+        <p>nigga</p>
+        <p>nigga</p>
+    </div>
+    <div id="green">
+        hi
+        <article>
+            <h1>nigga</h1>
+          <p>nigga</p>
+        </article>
+        </div>
+        <a href="https://www.goo2gle.com">Google</a>
+</body>
+</html>

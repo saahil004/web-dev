@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_uni -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 20vw;
+            height: 10vh;
+            /* text-align: center; */
+            margin: auto;
+            background-color: aqua;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 20vw;
+            height: 10vh;
+            margin: 23px auto;
+            background-color: aqua;
+            font-size: 19px;
+            box-sizing: border-box;
+        }
+
+        /* em ka matlab kitne times hojayega inherited font */
+        /* rem ka matlab kitne times hojayega inherited font root element se*/
+        .container>p {
+            /* font-size: 1.1rem; */
+            /* font-size: 1.1rem; */
+            /* percentage unit means parent ki width ki percent */
+            border: 2px solid black;
+            width: 99%;
+        }
+
+        /* root element hai yeh jo pure document pe kaam karega */
+        html {
+            font-size: 12px;
+        }
+
+        /* vmin and vmax are used as height is greater in phone so we use vmin for width and in comp we use vmin height as width is greater than height*/
+        /* min height and max height will change as we used min height but this will be minimum and it will increase with content */
+        .mycont > div{
+            background-color: blue;
+            color: chartreuse;
+            font-size: 22px;
+            width: 80vmax;
+            /* height: 20vmin; */
+            /* min-height: 20vh; */
+            height: 50%;
+            box-sizing: border-box;
+            margin: 23px auto;
+
+        }
+        .mycont > div > div{
+            background-color: blue;
+            color: chartreuse;
+            font-size: 22px;
+            width: 80vmax;
+            /* height: 20vmin; */
+            /* min-height: 20vh; */
+            height: 50%;
+            width: 50%;
+            box-sizing: border-box;
+            margin: 23px auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        this is a box
+    </div>
+    <span class="box">
+        This is a box
+    </span>
+    <div class="container">
+
+        <p>nigga this is a container</p>
+    </div>
+    <div class="mycont">
+        <div> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, doloribus ipsa. Officiis quisquam velit
+            modi omnis provident quia voluptate error. Tempora, necessitatibus eveniet.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, amet accusantium! Dignissimos magni
+            praesentium assumenda vero voluptate repudiandae tempora dolores dicta deserunt dolorum ipsa autem enim
+            sapiente, optio reiciendis sunt. Veritatis placeat voluptate, a perspiciatis facilis alias cum eius
+            quibusdam distinctio totam earum quisquam, doloremque odio consequuntur atque officia quam repellat est
+            error. Quia non quos explicabo et pariatur voluptatum reprehenderit quis asperiores perspiciatis nihil.
+            Recusandae illum aut provident, porro repudiandae maiores temporibus nam quaerat reiciendis eius iure ipsum
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorum molestiae accusantium, suscipit, nobis illum dignissimos culpa minima facere quas deleniti, dolore obcaecati atque quisquam eius asperiores molestias laboriosam a.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

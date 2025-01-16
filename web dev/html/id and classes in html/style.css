@@ -1,0 +1,10 @@
+.blue {
+    /*dot is used to target classes*/
+    background-color: aqua;
+}
+
+#hi {
+    font-size: 300px;
+    color: blue;
+    /*we use hash to target id*/
+}

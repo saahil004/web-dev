@@ -1,0 +1,20 @@
+SEO > search engine optimization
+CORE WEB VITALS(they keep changing):
+CLS > cumulative layout shift(page ka layout ya visible elements kitna shift horahe hain page load hote hote)
+LCP > largest contentful paint(page ka sabse bara element kitni der mein load horaha hai. 2.5 ya less seconds acha lcp hai.)
+FID > first input delay(kitni der mein ek input process horaha hai for example ek button click 100ms se kam mein hojaye tou best)
+INP > interaction to next paint(button click ke baad dusri cheez kab load hogi aur responsiveness)
+
+INP focuses on the time it takes from a user's interaction to the next paint (when the response from that interaction is processed and loaded on the screen). INP measures page responsiveness by analyzing quickly a user can see something happening after an interaction.
+ 
+‍
+
+FID, however, measures page responsiveness from when a user first interacts with your site (click a link, tap on a button, etc.) to when the browser can respond to that interaction. This could be impacted by other processes the browser is conducting simultaneously.
+
+
+
+
+lighthouse > google chrome ka feature jo batayega website kese improve ho sakti hai aur report bana ke dedega
+
+
+web.dev website for more info

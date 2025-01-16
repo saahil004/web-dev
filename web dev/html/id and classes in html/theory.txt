@@ -1,0 +1,9 @@
+ID > -unique identifier assigned to only one element within a page.
+     -Used for unique styling and javascript manipulations.
+     -used for linking by #
+     - # in css
+
+Classes > -Attribute that lets u give same name to multiple elements.
+          -That way we can style or change their behavior all at once.
+          -not unique and can be assigned to multiple html elements.    
+          -. in css

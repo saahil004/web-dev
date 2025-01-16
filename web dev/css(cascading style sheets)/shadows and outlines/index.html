@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and outlines</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            /* display: inline; */
+            /* box-shadow: h-offset v-offset blur spread color inset;
+            h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+blur: The larger the value, the blurrier the shadow.
+spread: Expands or shrinks the shadow size.
+color: Defines the shadow color.
+inset: Makes the shadow inner. */
+            box-shadow:-5px 11px 5px red;
+        }
+        p {
+            text-shadow: 0.8px 0.7px 1px purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        i am a box
+    </div>
+    <p class="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci itaque labore saepe possimus. Cumque voluptatibus id, sequi laudantium earum placeat sunt debitis minima!
+    </p>
+</body>
+
+</html>
